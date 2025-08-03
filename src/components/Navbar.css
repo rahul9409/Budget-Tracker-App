@@ -1,0 +1,36 @@
+/* Navbar styles with medium-light gray background */
+
+.navbar {
+  background-color: #e0e0e0; /* Slightly darker gray */
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #cfcfcf; /* Slightly darker hover */
+}
+
+.nav-link.active {
+  background-color: #333;
+  color: #fff;
+}

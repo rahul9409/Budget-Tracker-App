@@ -1,0 +1,130 @@
+.report-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  color: #313336;
+  margin-bottom: 1rem;
+}
+
+.report-container h3 {
+  margin: 1rem 0 0.5rem;
+  color: #444;
+}
+
+.report-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Optional: Make PieChart responsive on smaller screens */
+@media (max-width: 600px) {
+  .chart-section {
+    padding: 1rem;
+  }
+
+  .report-container {
+    padding: 1rem;
+  }
+}
+.report-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+
+.stat-box {
+  padding: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.stat-box h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.stat-box p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+}
+.bar-chart-wrapper {
+  overflow-x: auto;
+}
+/* Filter by Type dropdown */
+select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+select:hover,
+select:focus {
+  border-color: #8884d8;
+}
+
+/* Bar chart wrapper for responsive overflow */
+.bar-chart-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px 0;
+
+  /* Center align content horizontally */
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Styling for the chart title and no data text */
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.no-data-message {
+  font-size: 14px;
+  color: #888;
+  padding: 10px 0;
+}

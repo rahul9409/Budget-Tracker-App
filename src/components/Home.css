@@ -1,0 +1,107 @@
+/* styles.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.income,
+.expense,
+.balance {
+  flex: 1;
+  min-width: 150px;
+  background-color: #e9f7ef;
+  border-left: 5px solid #28a745;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.expense {
+  background-color: #fcebea;
+  border-left-color: #dc3545;
+}
+
+.balance {
+  background-color: #e3f2fd;
+  border-left-color: #007bff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #d0e5ff; /* lighter blue */
+  color: #333; /* darker text for readability */
+}
+
+thead tr th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left; /* align with thead */
+}
+
+.transactions-heading {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.income-row td {
+  background-color: #e6f4ea;
+}
+
+.expense-row td {
+  background-color: #fce8e6;
+}
+
+.view-all {
+  margin-top: 10px;
+  text-align: right;
+}
+.view-all a {
+  text-decoration: none;
+  color: #007bff;
+}
